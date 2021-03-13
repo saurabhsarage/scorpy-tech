@@ -1,0 +1,40 @@
+.headcolor{
+    color: #83A5BD;;
+    text-align: center;
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 40px;
+    padding-top: 30px;
+}
+
+.rows{
+    padding: 30px;
+    font-size: 22px;
+    padding-left: 30px;
+    text-align: center;
+}
+
+.row div:hover{
+    background-color: #83A5BD;
+}
+/*.row span:hover{
+    list-style-type: circle;
+    /*font-size: 25px;
+    padding-top: 20px;
+}*/
+/*.rows span:hover::before{
+    visibility: hidden;
+}*/
+.rows :hover:after, .bullet{
+    line-height: initial;
+    content: "<";
+}
+
+.bullet{
+    height: 40px;
+    width: 40px;
+    background-color: #5F5654;
+    border-radius: 100%;
+    color: white;
+    display: inline-block;
+}

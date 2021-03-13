@@ -1,0 +1,33 @@
+.sidebar{
+  background-color: #B3BBC0;
+}
+
+.full-height{
+  height: 100%;
+  font-family: "Roboto";
+  font-weight: 400;
+}
+
+.head-side{
+  color: white;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 19px;
+  color: #0e0d0d;
+  display: block;
+  text-align: center;
+}
+.sidebar a:hover {
+  background-color: #83A5BD;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+a :active{
+  background-color: #83A5BD;
+}
