@@ -13,6 +13,7 @@ import { ThirdComponent } from './third/third.component';
 import { FourthComponent } from './fourth/fourth.component';
 import { LibraryComponent } from './library/library.component';
 import { CreateComponent } from './create/create.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { CreateComponent } from './create/create.component';
     ThirdComponent,
     FourthComponent,
     LibraryComponent,
-    CreateComponent
+    CreateComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
