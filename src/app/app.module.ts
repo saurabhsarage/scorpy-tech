@@ -14,6 +14,7 @@ import { FourthComponent } from './fourth/fourth.component';
 import { LibraryComponent } from './library/library.component';
 import { CreateComponent } from './create/create.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     AppRoutingModule,
     BrowserAnimationsModule,
     NgbModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

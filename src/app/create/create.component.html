@@ -6,4 +6,22 @@
             </div>
         </div>
     </div>
+    <form #userForm="ngForm"  novalidate>
+		<div class="form-group">
+			<label>Name</label>
+			<input type="text" #nameRef="ngModel" maxlength="11" minlength="3" class="form-control" name="name" ngModel required />
+			<div *ngIf="nameRef.errors && (nameRef.dirty || nameRef.touched)" class="alert alert-danger">
+				<div [hidden]="!nameRef.errors.required">
+					Please Enter Name
+				</div>
+				<div [hidden]="!nameRef.errors.minlength">
+					Please Enter At Least 3 Characters
+				</div>
+				<div [hidden]="!nameRef.errors.maxlength">
+					Please Enter Characters Less than 10
+				</div>
+			</div>
+		</div>
+		<button [disabled]="!userForm.form.valid" type="submit" class="btn">Submit</button>
+	</form>
 </div>
