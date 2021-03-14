@@ -1,0 +1,31 @@
+.bullet{
+    height: 40px;
+    width: 40px;
+    background-color: #5F5654;
+    border-radius: 100%;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    font-size: 30px;
+    margin-right: 20px;
+}
+.headcolor{
+    color: #83A5BD;
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 40px;
+    padding-top: 30px;
+
+}
+.rows{
+    padding: 30px;
+    font-size: 18px;
+    text-align: center;
+    color: black;
+    width: 100%;
+}
+.img-size{
+    height: 250px;
+    width: 100%;
+    padding-top: 30px;
+}

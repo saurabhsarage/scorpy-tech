@@ -1,1 +1,45 @@
-<p>library works!</p>
+<div class="container-fluid" style="padding-left: 20px;" [hidden]="hidediv">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-md-6" style="float: left;">
+                <h1 class="headcolor">LIBRARY</h1>
+            </div>
+            <div class="col-md-6" style="float: right; padding-top: 30px; align-content: flex-end;">
+                <!-- <button class="btn" routerLink="create" (click)="open()">Create a Moment</button> -->
+                <a [routerLink]="['create']" (click)="open()">click</a>
+            </div>
+        </div>
+    </div>
+    <div class="row table-format">
+        <table class="table" style="width: 100%;">
+            <thead>
+                <tr>
+                    <th scope="col">Update Date</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Author</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mark</td>
+                    <td class="title-color">Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <td>Jacob</td>
+                    <td class="title-color">Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <td>Larry</td>
+                    <td class="title-color">the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <router-outlet></router-outlet>
+</div>

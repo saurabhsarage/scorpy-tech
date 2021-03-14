@@ -1,18 +1,33 @@
-<h1 class="headcolor">Moment Message</h1>
-<div class="container-fluid" [hidden]="hidediv">
-    <div class="row" >
-        <div class="row rows" style="width: 100%;">
-            <a routerLink="first" (click)="open()"><span class="bullet">1</span> The Moment to define your topic in order to resonate and connect with listerner </a>
-        </div>
-        <div class="row rows" style="width: 100%;">
-            <a routerLink="second"><span class="bullet">2</span> Deliver the Message with purposeful message</a>
-        </div>
-        <div class="row rows" style="width: 100%;">
-            <a routerLink="third"><span class="bullet">3</span> Revel the Moment through story, emotion & widsome to establish personal application</a>
-        </div>
-        <div class="row rows" style="width: 100%;">
-            <a routerLink="fourth"><span class="bullet">4</span> Celebrate the measure of success achieved through defined steps & calls to action</a>
-        </div>
+<h1 class="headcolor" [hidden]="hidediv">Moment Message</h1>
+<div class="container-fluid" [hidden]="hidediv" >
+    <div class="row">
+        <a class="full-width" [routerLink]="['first']" (click)="open()" >
+            <div class="row rows" style="width: 100%;">
+                <span class="bullet">1</span> <b> Choose the <u>moment</u> </b> &nbsp; to define your topic in order to resonate and connect with
+                listerner
+            </div>
+        </a>
+        <a class="full-width" [routerLink]="['second']" (click)="open()">
+            <div class="row rows" style="width: 100%;">
+                <span class="bullet">2</span> <b>Deliver the <u>message</u></b>&nbsp; with
+                purposeful message
+            </div>
+        </a>
+
+        <a class="full-width" routerLink="third" (click)="open()">
+            <div class="row rows" style="width: 100%;">
+                <span class="bullet">3</span> <b>Revel the <u>movement</u></b> &nbsp;through story, emotion
+                & widsome to establish personal application
+            </div>
+        </a>
+        <a class="full-width" routerLink="fourth" (click)="open()">
+            <div class="row rows" style="width: 100%;">
+                <span class="bullet">4</span> <b>Celebrate the <u>measure </u></b>&nbsp;  of success
+                achieved through defined steps & calls to action
+            </div>
+        </a>
     </div>
 </div>
-<router-outlet></router-outlet>
+<div class="container-fluid">
+    <router-outlet></router-outlet>
+</div>

@@ -12,6 +12,7 @@ import { SecondComponent } from './second/second.component';
 import { ThirdComponent } from './third/third.component';
 import { FourthComponent } from './fourth/fourth.component';
 import { LibraryComponent } from './library/library.component';
+import { CreateComponent } from './create/create.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { LibraryComponent } from './library/library.component';
     SecondComponent,
     ThirdComponent,
     FourthComponent,
-    LibraryComponent
+    LibraryComponent,
+    CreateComponent
   ],
   imports: [
     BrowserModule,
